@@ -1,6 +1,8 @@
 # EcoBitsCurrency
 How to setup your Maven plugin to get a players ecobits balance and adjust the players ecobits balance
 
+Be sure to add your EcoBit currency name to the config.yml file. This name is case sensitive.
+
 You will need to add the following to your pom.xml
 ```xml
 <repositories>
