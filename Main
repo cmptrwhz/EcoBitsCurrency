@@ -1,0 +1,28 @@
+package org.cmptrwhz.main;
+
+import com.willfp.ecobits.EcoBitsPlugin;
+
+public final class Main extends JavaPlugin {
+    private static Main instance;
+    private EcoBitsPlugin ecoBitsPlugin;
+
+    @Override
+    public void onEnable() {
+        // Plugin startup logic
+        instance = this;
+        ecoBitsPlugin = EcoBitsPlugin.getInstance();
+    }
+
+    @Override
+    public void onDisable() {
+        // Plugin shutdown logic
+    }
+
+    public EcoBitsPlugin getEcoBitsPlugin(){
+        return ecoBitsPlugin;
+    }
+
+    public static Main getInstance() {
+        return instance;
+    }
+}
