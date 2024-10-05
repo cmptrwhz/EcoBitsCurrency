@@ -2,7 +2,7 @@
 How to setup your Maven plugin to get a players ecobits balance and adjust the players ecobits balance
 
 You will need to add the following to your pom.xml
-
+```xml
 <repositories>
 	<repository>
 		<id>auxilor-repo</id>
@@ -18,5 +18,6 @@ You will need to add the following to your pom.xml
 		<scope>provided</scope>
 	</dependency>
 </dependencies>
+```
 
 to be able to compile I also added the eco-6.74.1-all.jar to my project library.
